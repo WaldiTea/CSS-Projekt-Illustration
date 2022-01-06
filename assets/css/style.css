@@ -1,0 +1,286 @@
+/*
+########################################
+                  Global
+########################################
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Lato";
+}
+
+main,
+footer {
+  font-family: "Merriweather";
+  font-size: 1.5rem;
+}
+
+footer {
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-size: 3em;
+}
+
+p,
+li,
+a {
+  font-size: 1.2em;
+  color: #202020;
+}
+
+p {
+  line-height: 3rem;
+  margin-top: 1.5rem;
+}
+
+li {
+  list-style: none;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img:hover {
+  box-shadow: 1px 1px 5px #ccc;
+}
+
+section {
+  width: 83.3%;
+  margin: 0 auto;
+}
+
+/*
+########################################
+                  Header
+########################################
+*/
+/* ---------- navigation ---------- */
+header nav {
+  margin: 1rem;
+}
+
+header nav ul {
+  text-align: end;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+header nav ul li a {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+/*
+########################################
+                  Main
+########################################
+*/
+
+/* ---------- section 1-3 global ---------- */
+
+main section:nth-last-of-type(1n + 4) {
+  height: 95vh;
+}
+
+main section:nth-last-of-type(1n + 4) article {
+  width: 45rem;
+  padding-top: 10rem;
+}
+
+main section:nth-last-of-type(1n + 4) p {
+  margin-bottom: 2rem;
+}
+
+/* ---------- "absurd illustrations that make sense" ---------- */
+
+main section:nth-of-type(1) {
+  width: 92vw;
+  height: 95vh;
+  background: url(../img/illustration1.gif) no-repeat top right/40%;
+  margin: 0 1rem 0 10rem;
+}
+
+main section:nth-of-type(1) article a {
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  box-shadow: 0 0 0.3rem gray;
+}
+
+main section:nth-of-type(1) article a:nth-of-type(1) {
+  background: black;
+  color: #fff;
+}
+
+main section:nth-of-type(1) a:nth-of-type(2) {
+  background: #fff;
+  color: #000;
+}
+
+/* ---------- "real beauty resides in imperfection" ---------- */
+
+main section:nth-of-type(2) {
+  background: url(../img/illustration2.png) no-repeat top left/35%;
+}
+
+main section:nth-of-type(2) article {
+  margin-left: auto;
+}
+
+/* ---------- "expressiveness is... the new blak" ---------- */
+
+main section:nth-of-type(3) {
+  background: url(../img/illustration3.png) no-repeat top right/35%;
+}
+
+main section:nth-of-type(3) article p {
+  width: 40rem;
+}
+
+/* ---------- "section 4-6 global" ---------- */
+
+main section:nth-of-type(1n + 4) {
+  text-align: center;
+}
+
+main section:nth-of-type(4) article:nth-of-type(1) p,
+main section:nth-of-type(5) article:nth-of-type(1) p,
+main section:nth-of-type(6) article:nth-of-type(1) p {
+  margin: 1.5rem auto;
+}
+
+main section:nth-of-type(4) article:nth-of-type(2),
+main section:nth-of-type(5) article:nth-of-type(1n + 2) {
+  text-align: justify;
+  text-align-last: justify;
+}
+
+/* ---------- "illustrations of applications" ---------- */
+
+main section:nth-of-type(4) {
+  height: 100vh;
+}
+
+main section:nth-of-type(4) article:nth-of-type(1) p {
+  width: 76rem;
+  padding-bottom: 8rem;
+}
+
+main section:nth-of-type(4) article:nth-of-type(2) img {
+  width: 30%;
+}
+
+/* ---------- "examples of use" ---------- */
+
+main section:nth-of-type(5) article:nth-of-type(1) p {
+  width: 60rem;
+  padding-bottom: 7rem;
+}
+
+main section:nth-of-type(5) article:nth-of-type(1n + 2) {
+  margin-bottom: 7rem;
+}
+
+main section:nth-of-type(5) article:nth-of-type(1n + 2) img {
+  width: 47%;
+}
+
+/* ---------- "download illustrations" ---------- */
+
+main section:nth-of-type(6) article:nth-of-type(1) h2 {
+  margin-top: 12rem;
+}
+
+main section:nth-of-type(6) article:nth-of-type(1) p {
+  width: 61rem;
+}
+
+main section:nth-of-type(6) article:nth-of-type(2) {
+  width: 25rem;
+  background: #f5fbfe;
+  border-radius: 0.5rem;
+  padding: 4rem 0;
+  margin: 2rem auto;
+}
+
+main section:nth-of-type(6) article:nth-of-type(2) p:nth-of-type(1) {
+  font-size: 3em;
+  margin: 5rem 0;
+}
+
+main section:nth-of-type(6) article:nth-of-type(2) p:nth-of-type(2) {
+  color: #808080;
+  margin-bottom: 1.5rem;
+}
+
+main section:nth-of-type(6) article:nth-of-type(2) ul li:nth-of-type(7) {
+  margin-bottom: 3rem;
+}
+
+main section:nth-of-type(6) article:nth-of-type(2) ul li a {
+  background: #24bff2;
+  color: white;
+  font-size: 1em;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+}
+
+/*
+########################################
+                  Footer
+########################################
+*/
+footer {
+  margin-top: 10rem;
+}
+
+footer h2 {
+  margin-bottom: 3rem;
+}
+
+footer ul li {
+  line-height: 3rem;
+}
+
+footer ul li:nth-last-of-type(2n + 5) {
+  color: #808080;
+}
+
+footer ul li:nth-of-type(1n + 4) {
+  display: inline-block;
+  font-size: 1em;
+  margin: 1rem 0.5rem;
+}
+
+.fa-facebook-square {
+  color: #1877f2;
+}
+
+.fa-instagram-square {
+  color: #e4405f;
+}
+
+.fa-twitter-square {
+  color: #1da1f2;
+}
+
+.fa-youtube {
+  color: #cd201f;
+}
